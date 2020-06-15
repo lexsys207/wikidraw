@@ -222,7 +222,7 @@ img {
 }
 
 .section-d .posts .post .img-post:nth-child(1) {
-    background: url(/img/post-img.png);
+    background: url(../img/post-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -50px;
