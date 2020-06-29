@@ -374,7 +374,7 @@ img {
     left: 0;
     height: 400px;
     width: 100%;
-    background: url(/img/bg-other-pages.png);
+    background: url(../img/bg-other-pages.png);
     background-position-y: -450px;
 }
 .section-i .bg-other-pages .overlay {
