@@ -14,6 +14,7 @@
 
 html {
     scroll-behavior: smooth; 
+    overflow-x: hidden;
 }
 
 body {
@@ -359,4 +360,150 @@ img {
     width: 100%;
     height: 100%;
     background: var(--overlay-color);
+}
+
+.section-i {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: -73px;
+}
+.section-i .bg-other-pages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background: url(/img/bg-other-pages.png);
+    background-position-y: -450px;
+}
+.section-i .bg-other-pages .overlay {
+    height: 400px;
+}
+.section-i .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.section-i .container div {
+    text-align: center;
+    z-index: 2;
+}
+.section-i h1 {
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+.section-i p {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.section-j {}
+.section-j-inner {
+    color: var(--google-grey);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: auto;
+    max-width: 860px;
+    padding: 3rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.section-j .section-j-inner .blocks .block {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.section-j .section-j-inner .blocks .block img {
+    width: 200px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.section-j .section-j-inner .blocks .block h3 {
+    color: var(--google-blue);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.section-j .section-j-inner .blocks .block p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .navbar {
+        padding-top: 1rem;
+    }
+    .navbar .logo h1 {
+        font-size: 1.5rem;
+    }
+    .navbar .nav {
+        display: none;
+    }
+    .section-a .overlay {
+        height: 180px;
+    }
+    video {
+        width: 100%;
+    }
+    .section-a {
+        height: 180px;
+        max-height: 180px;
+    }
+    .section-a .container {
+        align-items: flex-start;
+    }
+    .section-a h1 {
+        font-size: 2rem;
+    }
+    .section-a p {
+        font-size: 1.5rem;
+    }
+    .section-a .btn {
+        display: none;
+    }
+    .section-b-inner h3 {
+        font-size: 1rem;
+    }
+    .section-b-inner h2 {
+        font-size: 1.5rem;
+    }
+    .section-b-inner p {
+        font-size: 1rem;
+    }
+    .section-d h2 {
+        font-size: 1.5rem;
+    }
+    .section-d .posts {
+        grid-template-columns: repeat(1, 100%);
+        grid-gap: 20px;
+        padding: 1rem;
+    }
+
+    
 }
