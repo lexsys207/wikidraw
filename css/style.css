@@ -436,6 +436,47 @@ img {
     font-size: 1.5rem;
 }
 
+.section-g {}
+.section-g-inner {
+    color: var(--google-grey);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: auto;
+    max-width: 860px;
+    padding: 3rem 0;
+    border-bottom: 1px solid #ccc;
+}.section-g .section-g-inner .posts .post {
+    display: grid;
+    grid-template-columns: 270px 1fr 160px;
+    grid-gap: 20px;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.section-g .posts .post .img-post:nth-child(1) {
+    background: url(../img/post-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 195px;
+}
+.section-g .posts .post .img-post .overlay {
+    height: 195px;
+    width: 270px;
+    background: var(--google-grey);
+    position: absolute;
+    top: auto;
+    left: auto;
+    z-index: 1;
+}
+
+
+
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
