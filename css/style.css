@@ -90,7 +90,7 @@ img {
 }
 
 .navbar .nav a:hover {
-    color: #555;
+    color: #ccc;
 }
 
 .video {
@@ -376,9 +376,12 @@ img {
     width: 100%;
     background: url(../img/bg-other-pages.png);
     background-position-y: -450px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .section-i .bg-other-pages .overlay {
     height: 400px;
+    opacity: 0.6;
 }
 .section-i .container {
     height: 100%;
@@ -420,6 +423,8 @@ img {
     grid-template-columns: 370px 1fr;
     align-items: center;
     margin-bottom: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
 }
 .section-j .section-j-inner .blocks .block img {
     width: 200px;
@@ -450,24 +455,31 @@ img {
     border-bottom: 1px solid #ccc;
 }.section-g .section-g-inner .posts .post {
     display: grid;
-    grid-template-columns: 270px 1fr 160px;
+    grid-template-columns: 200px 1fr 160px;
     grid-gap: 20px;
     align-items: center;
     margin-bottom: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
 }
 .section-g .posts .post .img-post:nth-child(1) {
     background: url(../img/post-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -50px;
+    background-position-y: -100px;
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 195px;
+    height: 145px;
+}
+.section-g .posts .post h3 {
+    color: var(--google-blue);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
 }
 .section-g .posts .post .img-post .overlay {
-    height: 195px;
-    width: 270px;
+    height: 145px;
+    width: 200px;
     background: var(--google-grey);
     position: absolute;
     top: auto;
